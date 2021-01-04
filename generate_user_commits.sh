@@ -16,25 +16,29 @@ CURRENT_BRANCH="feature/user$NAME"
 cd git_lab2_lesson2/
 
 function commit_changes() {
-	git add $1
+	git add .
 	git commit -m "created git_lab2_lesson2/$1" --author "$NAME <$EMAIL>"
 	git push origin $CURRENT_BRANCH
 }
 
+rm *.*
 git checkout -b $CURRENT_BRANCH
 echo $BORN_YEAR > $NAME.txt
 commit_changes $NAME.txt
 
 CURRENT_BRANCH="feature/list$NAME"
+rm *.*
 git checkout -b $CURRENT_BRANCH
 echo $NAME > list.txt;
 commit_changes list.txt
 
 CURRENT_BRANCH="feature/school$NAME"
+rm *.*
 git checkout -b $CURRENT_BRANCH
 echo $SCHOOL > ${NAME}School.txt
 commit_changes ${NAME}School.txt
 
+git checkout master
 
 echo "Done";
 exit 0;
