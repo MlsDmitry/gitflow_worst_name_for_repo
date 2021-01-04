@@ -11,7 +11,7 @@ BORN_YEAR=$2
 SCHOOL=$3
 EMAIL=$4
 
-$CURRENT_BRANCH="feature/user$NAME"
+CURRENT_BRANCH="feature/user$NAME"
 cd git_lab2_lesson2 
 
 function commit_changes() {
