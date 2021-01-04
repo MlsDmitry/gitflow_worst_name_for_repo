@@ -40,7 +40,8 @@ git checkout -b $CURRENT_BRANCH
 echo $SCHOOL > ${NAME}School.txt
 commit_changes ${NAME}School.txt
 
-git checkout master
+git checkout script
 
 echo "Done";
 exit 0;
+
