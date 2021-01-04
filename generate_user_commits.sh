@@ -26,13 +26,13 @@ echo $BORN_YEAR > $NAME.txt
 commit_changes $NAME.txt
 cd ..
 
-$CURRENT_BRANCH="feature/list$NAME"
+CURRENT_BRANCH="feature/list$NAME"
 git checkout -b $CURRENT_BRANCH
 echo $NAME > list.txt;
 commit_changes list.txt
 cd ..
 
-$CURRENT_BRANCH="feature/school$NAME"
+CURRENT_BRANCH="feature/school$NAME"
 git checkout -b $CURRENT_BRANCH
 echo $SCHOOL > ${NAME}School.txt
 commit_changes ${NAME}School.txt
