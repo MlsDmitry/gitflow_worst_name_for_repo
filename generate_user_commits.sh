@@ -12,6 +12,7 @@ SCHOOL=$3
 EMAIL=$4
 
 CURRENT_BRANCH="feature/user$NAME"
+[ ! -d "git_lab2_lesson2" ] && mkdir git_lab2_lesson2 
 cd git_lab2_lesson2/
 
 function commit_changes() {
