@@ -15,6 +15,8 @@ CURRENT_BRANCH="feature/user$NAME"
 [ ! -d "git_lab2_lesson2" ] && mkdir git_lab2_lesson2 
 # delete generate_user_commits.sh. Keep it only in script branch!
 rm generate_user_commits.sh
+# also cached one
+git rm --cached generate_user_commits.sh
 cd git_lab2_lesson2/
 
 function commit_changes() {
